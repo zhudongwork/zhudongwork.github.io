@@ -35,7 +35,7 @@
     
 </head>
 <body>
-<audio src="./music/爱，很简单-陶喆.mp3"  autoplay ></audio>
+<audio loop src="./music/爱，很简单-陶喆.mp3"  id="audio" autoplay preload="auto" ></audio>
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
@@ -202,7 +202,39 @@
 
 	
 	<!-- Countdown -->
-    <script src="js/jquery.mb-comingsoon.min.js"></script>
+<!--	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+	<script>
+        // function autoPlayVideo(){
+        //     wx.config({
+        //         debug:false,
+        //         appId:"",
+        //         timestamp:1,
+        //         nonceStr:"",
+        //         signature:"",
+        //         jsApiList:[]
+        //     });
+        //     wx.ready(function(){
+        //         var autoplayVideo=document.getElementById("audio");
+        //         autoplayVideo.play()
+        //     })
+        // };
+        // autoPlayVideo();
+
+        //--创建页面监听，等待微信端页面加载完毕 触发音频播放
+		document.addEventListener('WeixinJSBridgeReady', function() {
+    		document.getElementById('audio').play()
+		})
+		function audioAutoPlay2() {
+			var audio = document.getElementById('audio');
+				audio.play();
+		}
+
+		//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+		document.addEventListener('touchstart', function () {
+			audioAutoPlay2();
+		});
+		window.onload = audioAutoPlay2;
+    </script>
     <script>
 	var biryear = 2019;
 	var birmonth = 7;
@@ -263,6 +295,7 @@
 	window.onload = showtime;
 
 </script>
+
 	
 </div>
 </body></html>
