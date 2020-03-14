@@ -34,7 +34,7 @@
 	<![endif]-->
     
 </head>
-<body onload=showtime()>
+<body>
 <audio src="./music/爱，很简单-陶喆.mp3"  autoplay ></audio>
 <div class="wrap-body">
 
@@ -47,7 +47,7 @@
 				<div class="counter">
 					<div class="centered text-center" >
 						<div  class="zerogrid">
-							<h2 id="count">0</h2>
+							<h2 id="count">加载有一点点慢，稍等一下哦</h2>
 						</div>
 
 					</div>
@@ -260,6 +260,8 @@
 		timerid = setTimeout("showtime()",1000);
 		timerRunning = true;
 	}
+	window.onload = showtime;
+
 </script>
 	
 </div>
