@@ -30,7 +30,28 @@ img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
 
 a{color: #ff970b;text-decoration: none;}
 a:hover {}
-
+.mycounter{
+	font: 14px/25px Arial, Helvetica, sans-serif;
+	font-family: Vidaloka,serif;
+	color: #fff;
+	text-align: center;
+	font-weight: 200;
+	box-sizing: border-box;
+	background: transparent;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: top;
+	padding: 2%;
+	/*width: 48%;*/
+	height: 100%;
+	position: absolute;
+	font-size: 54px;
+	/*line-height: 90px;*/
+	/*left: 50%;*/
+	/*top: 0;*/
+	/*z-index: 2;*/
+}
 h1, h2 	{font-size: 25px;line-height: 25px;}
 h3, h4	{font-size: 20px;line-height: 20px;}
 h5, h6	{font-size: 16px;line-height: 16px;}
@@ -81,6 +102,7 @@ header .logo img{display: inline-block;margin: auto;padding: 10px;max-width: 210
 #container {}
 #container .wrap-container{background: #ffffff;}
 
+.music{position: absolute;top:10px}
 /* ---content-box--- */
 .content-box {}
 .content-box .wrap-box {padding:80px 10px; position: relative;}
@@ -179,6 +201,7 @@ a.button.bt1 {background: #56AE33;color: #ffffff;padding: 5px 20px;width: 100%;t
 a.button.bt2 {background: #0000ff;color: #ffffff;}
 
 
+
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------Zoom-Effect---------------------------------- */
 /* ---------------------------------------------------------------------------- */	
@@ -250,9 +273,3 @@ a.button.bt2 {background: #0000ff;color: #ffffff;}
 	display: inline-block;
 }
 
-/* ---------------------------------------------------------------------------- */
-/* --------------------------------Google-Map---------------------------------- */
-/* ---------------------------------------------------------------------------- */
-.maps iframe{
-    pointer-events: none;
-}

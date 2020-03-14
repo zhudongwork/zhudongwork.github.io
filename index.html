@@ -8,7 +8,9 @@
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>i丹丹</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
@@ -26,21 +28,14 @@
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	
 	<script src="js/jquery-2.1.1.js"></script>
-
-	<!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
     <!--[if lt IE 9]>
 		<script src="js/html5.js"></script>
 		<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
     
 </head>
-<body>
+<body onload=showtime()>
+<audio src="./music/爱，很简单-陶喆.mp3"  autoplay ></audio>
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
@@ -48,17 +43,20 @@
 	<div class="wrap-header">
 		<div class="main-header">
 			<div class="zerogrid">
-				<h1>丹可爱 & 猪猪</h1>
-<!--				<div class="counter">-->
-<!--					<div class="centered text-center" id="myCounter"></div>-->
-<!--				</div>-->
+				<h1>丹宝 and 大宝</h1>
+				<div class="counter">
+					<div class="centered text-center" >
+						<div  class="zerogrid">
+							<h2 id="count">0</h2>
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 </header>
-
-
 
 <!--////////////////////////////////////Container-->
 <section id="container">
@@ -71,7 +69,8 @@
 						<div class="col-3-5">
 							<div class="wrap-col">
 								<h1>HE <br>大宝</h1>
-								<p> got down on one knee, knees shaking, voice trembling and said: “Will you marry me, please?”. She started loughig, then crying. Then she replied: “Of course, I will, you silly!”</p>
+								<p>钢铁直男 不懂浪漫</p>
+								<p>逗逼 大大咧咧</p>
 							</div>
 						</div>
 						<div class="col-2-5">
@@ -84,7 +83,8 @@
 						<div class="col-3-5 fix-right">
 							<div class="wrap-col">
 								<h1>SHE <br>丹宝</h1>
-								<p>Reaction? Of course, I told him yes. Tell him yes. Even if you are dying of fear, even if you are sorry later, because whatever you do, you will be sorry all the rest of your life if you say no.</p>
+								<p>文艺少女</p>
+								<p>丹宝 丹可爱 丹臭臭 丹儿</p>
 							</div>
 						</div>
 						<div class="col-2-5">
@@ -105,7 +105,7 @@
 						<div class="wrapper">
 							<h2 class="color-yellow">GALLERY</h2>
 							<hr class="line">
-							<div class="intro"></div>
+							<div class="intro">怎么爱你，都不觉得够</div>
 						</div>
 					</div>
 					<div class="row">
@@ -185,288 +185,82 @@
 						虽然我们彼此有时会闹闹小矛盾，但这是我们一直互相磨合的过程，我们发现了自身的好和不好，我们越来越懂得对方，我们相处得也越来越融洽，这些都是对我们的考验。
 					</p>
 					<p>
-						丹宝贝，让我陪你一起奇奇怪怪，可可爱爱！
+						我时常想到未来：下班回家，就可以给你做饭，或者吃你做的菜，然后洗澡洗衣服，一起窝在沙发上，抱着你，一边吃零食一边追剧....，想想都觉得好幸福呀！
+					</p>
+					<p></p>
+					<p>
+						丹宝宝，让我陪你一起奇奇怪怪，可可爱爱！
 					</p>
 				</div>
 			</div>
 		</section>
 		
-<!--		&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;content-box-4&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--		<section class="content-box boxstyle-1 box-4">-->
-<!--			<div class="zerogrid">-->
-<!--				<div class="row wrap-box">&lt;!&ndash;Start Box&ndash;&gt;-->
-<!--					<div class="header">-->
-<!--						<div class="wrapper">-->
-<!--							<h2 class="color-yellow">OUR BLOG</h2>-->
-<!--							<hr class="line">-->
-<!--							<div class="intro">Lorem ipsum dolor sit amet</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="row">&lt;!&ndash;Start Box&ndash;&gt;-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col item">-->
-<!--								<div class="zoom-container">-->
-<!--									<img src="images/kids4-thumb.jpg" />-->
-<!--								</div>-->
-<!--								<div class="item-content">-->
-<!--									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>-->
-<!--									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. -->
-<!--									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>-->
-<!--									<a class="button" href="single.html">More</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col item">-->
-<!--								<div class="zoom-container">-->
-<!--									<img src="images/kids3-thumb.jpg" />-->
-<!--								</div>-->
-<!--								<div class="item-content">-->
-<!--									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>-->
-<!--									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. -->
-<!--									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>-->
-<!--									<a class="button" href="single.html">More</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col item">-->
-<!--								<div class="zoom-container">-->
-<!--									<img src="images/kids2-thumb.jpg" />-->
-<!--								</div>-->
-<!--								<div class="item-content">-->
-<!--									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>-->
-<!--									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. -->
-<!--									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>-->
-<!--									<a class="button" href="single.html">More</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="row">&lt;!&ndash;Start Box&ndash;&gt;-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col item">-->
-<!--								<div class="zoom-container">-->
-<!--									<img src="images/kids3-thumb.jpg" />-->
-<!--								</div>-->
-<!--								<div class="item-content">-->
-<!--									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>-->
-<!--									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. -->
-<!--									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>-->
-<!--									<a class="button" href="single.html">More</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col item">-->
-<!--								<div class="zoom-container">-->
-<!--									<img src="images/kids4-thumb.jpg" />-->
-<!--								</div>-->
-<!--								<div class="item-content">-->
-<!--									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>-->
-<!--									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. -->
-<!--									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>-->
-<!--									<a class="button" href="single.html">More</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col item">-->
-<!--								<div class="zoom-container">-->
-<!--									<img src="images/kids2-thumb.jpg" />-->
-<!--								</div>-->
-<!--								<div class="item-content">-->
-<!--									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>-->
-<!--									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. -->
-<!--									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>-->
-<!--									<a class="button" href="single.html">More</a>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</section>-->
-<!--		-->
-<!--		&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;content-box-5&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--		<section class="content-box boxstyle-2 box-5">-->
-<!--			<div class="zerogrid">-->
-<!--				<div class="row wrap-box">&lt;!&ndash;Start Box&ndash;&gt;-->
-<!--					<div class="header">-->
-<!--						<div class="wrapper">-->
-<!--							<h2>Our Friends</h2>-->
-<!--							<hr class="line">-->
-<!--							<div class="intro">Lorem ipsum dolor sit amet</div>-->
-<!--						</div>-->
-<!--					</div>	-->
-<!--					<div class="row">-->
-<!--						<div class="col-1-2">-->
-<!--							<div class="row post">-->
-<!--								<div class="col-2-6">-->
-<!--									<div class="wrap-col wrapper">-->
-<!--										<a href="#"><img src="images/ava-4.jpg"></a>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="col-4-6">-->
-<!--									<div class="wrap-col">-->
-<!--										<h3>Craig Herrera</h3>-->
-<!--										<span>Best Man</span>-->
-<!--										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>-->
-<!--										<ul class="social-buttons">-->
-<!--											<li><a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-facebook"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-linkedin"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a>-->
-<!--											</li>-->
-<!--										</ul>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="row post">-->
-<!--								<div class="col-2-6">-->
-<!--									<div class="wrap-col wrapper">-->
-<!--										<a href="#"><img src="images/ava-6.jpg"></a>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="col-4-6">-->
-<!--									<div class="wrap-col">-->
-<!--										<h3>Sheryl Wilson</h3>-->
-<!--										<span>Bridesmaid</span>-->
-<!--										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>-->
-<!--										<ul class="social-buttons">-->
-<!--											<li><a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-facebook"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-linkedin"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a>-->
-<!--											</li>-->
-<!--										</ul>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-2">-->
-<!--							<div class="row post">-->
-<!--								<div class="col-2-6 right">-->
-<!--									<div class="wrap-col wrapper">-->
-<!--										<a href="#"><img src="images/ava-7.jpg"></a>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="col-4-6">-->
-<!--									<div class="wrap-col">-->
-<!--										<h3>Sheryl Wilson</h3>-->
-<!--										<span>Bridesmaid</span>-->
-<!--										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>-->
-<!--										<ul class="social-buttons">-->
-<!--											<li><a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-facebook"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-linkedin"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a>-->
-<!--											</li>-->
-<!--										</ul>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--							<div class="row post">-->
-<!--								<div class="col-2-6 right">-->
-<!--									<div class="wrap-col wrapper">-->
-<!--										<a href="#"><img src="images/ava-8.jpg"></a>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--								<div class="col-4-6">-->
-<!--									<div class="wrap-col">-->
-<!--										<h3>Craig Herrera</h3>-->
-<!--										<span>Best Man</span>-->
-<!--										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>-->
-<!--										<ul class="social-buttons">-->
-<!--											<li><a href="#"><i class="fa fa-twitter"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-facebook"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-linkedin"></i></a>-->
-<!--											</li>-->
-<!--											<li><a href="#"><i class="fa fa-google-plus"></i></a>-->
-<!--											</li>-->
-<!--										</ul>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</section>-->
-<!--		-->
-<!--		&lt;!&ndash;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;content-box-6&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
-<!--		<section class="content-box boxstyle-1 box-6">-->
-<!--			<div class="zerogrid">-->
-<!--				<div class="row wrap-box">&lt;!&ndash;Start Box&ndash;&gt;-->
-<!--					<div class="header">-->
-<!--						<div class="wrapper">-->
-<!--							<h2 class="color-yellow">LOCATION</h2>-->
-<!--							<hr class="line">-->
-<!--							<div class="intro">Lorem ipsum dolor sit amet</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="row">-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col">-->
-<!--								<i class="fa fa-map-marker"></i>-->
-<!--								<h3>Location</h3>-->
-<!--								<p>The wedding party will begin @ <span>14:00 P.M</span> on <span>Monday July 23, 2015</span> . Free drinks and music is on the way, no costume is needed.</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col">-->
-<!--								<i class="fa fa-phone"></i>-->
-<!--								<h3>Location</h3>-->
-<!--								<p>Gulshan Hall, 60 Grant Ave. Carteret NJ 0708 (732) 803-01 03, (732) 806-01 04 info@emailname.com</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-1-3">-->
-<!--							<div class="wrap-col">-->
-<!--								<i class="fa fa-envelope"></i>-->
-<!--								<h3>Location</h3>-->
-<!--								<p><span>Eevent One :</span> Event Name and Time <br><span>Eevent Two :</span> Event Name and Time <br><span>Eevent Three :</span> Event Name and Time</p>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</section>-->
+
 	</div>
 </section>
 
-	
-	<!-- Google Map -->
-	<script>
-		$('.maps').click(function () {
-		$('.maps iframe').css("pointer-events", "auto");
-	});
 
-	$( ".maps" ).mouseleave(function() {
-	  $('.maps iframe').css("pointer-events", "none"); 
-	});
-	</script>
 	
 	<!-- Countdown -->
     <script src="js/jquery.mb-comingsoon.min.js"></script>
-    <script type="text/javascript">
-        // $(function () {
-        //     $('#myCounter').mbComingsoon({ expiryDate: new Date(2017, 0, 1, 9, 30), speed:100 });
-        //     setTimeout(function () {
-        //         $(window).resize();
-        //     }, 200);
-        // });
-    </script>
+    <script>
+	var biryear = 2019;
+	var birmonth = 7;
+	var birday = 10;
+	var year = new Date();
+	var getyear = year.getYear();
+	TMonth = new Array('Jan','Feb','Mar','Apr','May','June','July','Aug','Sep','Oct','Nov','Dec');
+	nowMonth = birmonth - 1;
+	bmonth = TMonth[nowMonth];
+	var timerid;
+	var timerRunning = false;
+	var today = new Date();
+	var startday = new Date();
+	var enday = new Date();
+	var minPerDay = 0;
+	var secsLeft = 0;
+	var secsRound = 0;
+	var secsRemain = 0;
+	var minLeft = 0;
+	var minRound = 0;
+	var minRemain = 0;
+	var timeRemain = 0;
+	function showtime()
+	{
+		startday = new Date(""+bmonth+" "+birday+", "+biryear+" 00:00 EDT");
+		startday.setYear(""+biryear+"");
+		today = new Date();
+		secsPerDay = 1000 ;
+		minPerDay = 60 * 1000 ;
+		hoursPerDay = 60 * 60 * 1000;
+		PerDay = 24 * 60 * 60 * 1000;
+		secsLeft = (today.getTime() - startday.getTime()) / minPerDay;
+		secsRound = Math.round(secsLeft);
+		secsRemain = secsLeft - secsRound;
+		secsRemain = (secsRemain < 0) ? secsRemain = 60 - ((secsRound - secsLeft) * 60) : secsRemain = (secsLeft - secsRound) * 60;
+		secsRemain = Math.round(secsRemain);
+		minLeft = ((today.getTime() - startday.getTime()) / hoursPerDay);
+		minRound = Math.round(minLeft);
+		minRemain = minLeft - minRound;
+		minRemain = (minRemain < 0) ? minRemain = 60 - ((minRound - minLeft) * 60) : minRemain = ((minLeft - minRound) * 60);
+		minRemain = Math.round(minRemain - 0.495);
+		hoursLeft = ((today.getTime() - startday.getTime()) / PerDay);
+		hoursRound = Math.round(hoursLeft);
+		hoursRemain = hoursLeft - hoursRound;
+		hoursRemain = (hoursRemain < 0) ? hoursRemain = 24 - ((hoursRound - hoursLeft) * 24)  : hoursRemain = ((hoursLeft - hoursRound) * 24);
+		hoursRemain = Math.round(hoursRemain - 0.5);
+		daysLeft = ((today.getTime() - startday.getTime()) / PerDay);
+		daysLeft = (daysLeft - 0.5);
+		daysRound = Math.round(daysLeft);
+		daysRemain = daysRound;
+		day_rem = " 天 >>> "
+
+		timeRemain = "我们相恋 "+daysRemain+" 天 "+hoursRemain+" 小时 "+minRemain+" 分";
+		document.getElementById('count').innerHTML = timeRemain;
+		timerid = setTimeout("showtime()",1000);
+		timerRunning = true;
+	}
+</script>
 	
 </div>
 </body></html>

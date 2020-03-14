@@ -58,7 +58,7 @@
 		min_rem = " 分 >>> "
 		sec_rem = " 秒"
 		timeRemain = daysRemain + day_rem + hoursRemain + hour_rem + minRemain + min_rem + secsRemain + sec_rem;
-		document.up.face.value = timeRemain;
+		document.getElementById('count').innerHTML = timeRemain;
 		timerid = setTimeout("showtime()",1000);
 		timerRunning = true;
 	}
@@ -67,11 +67,12 @@
 <table width="400" height="50" border="1" align="center" cellpadding="4" cellspacing="3" bordercolor="#CCCCCC" bgcolor="#CCFF00">
     <tr>
       <td align="center" valign="middle" bgcolor="#FFFFFF" background="temp.bmp">
-	  <FORM name=up onsubmit=1>
-        <font size="5" color="#9966CC" face="华文行楷">从你出生到目前为止，你已度过了</font>
-		<p>
-        <INPUT size=46 value="计算出您的精彩人生！" name= "face">
-      </FORM>
+<!--	  <FORM name=up onsubmit=1>-->
+<!--        <font size="5" color="#9966CC" face="华文行楷">从你出生到目前为止，你已度过了</font>-->
+<!--		<p>-->
+<!--        <INPUT size=46 value="计算出您的精彩人生！" name= "face">-->
+<!--      </FORM>-->
+          <p id="count"></p>
 	  </td>
     </tr>
 </table>
