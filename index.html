@@ -35,7 +35,7 @@
     
 </head>
 <body>
-<audio loop src="./music/爱，很简单-陶喆.mp3"  id="audio" autoplay preload="auto" ></audio>
+<audio loop  id="audioBox" autoplay preload="auto" controls="controls"></audio>
 <div class="wrap-body">
 
 <!--////////////////////////////////////Header-->
@@ -109,6 +109,7 @@
 							<div class="intro">怎么爱你，都不觉得够</div>
 						</div>
 					</div>
+					<h3 style="text-align:center;">2019 </h3>
 					<div class="row">
 						<div class="col-1-3">
 							<div class="item-container">
@@ -169,6 +170,84 @@
 							</div>
 						</div>
 					</div>
+
+					<h3 style="text-align:center;">2020 </h3>
+					<hr class="line">
+
+					<div class="row">
+						<div class="col-1-3">
+							<div class="item-container">
+
+								<img src="images/2020-1.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+
+								<img src="images/2020-2.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+
+								<img src="images/2020-3.jpg" />
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-4.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-12.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-8.jpg" />
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-5.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-6.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-7.jpg" />
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-9.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-10.jpg" />
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="item-container">
+								<img src="images/2020-11.jpg" />
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -192,6 +271,18 @@
 					<p>
 						丹宝宝，让我陪你一起奇奇怪怪，可可爱爱！
 					</p>
+				</div>
+			</div>
+
+			<div class="zerogrid">
+				<div class="row wrap-box"><!--Start Box-->
+					<h3>亲爱的，一周年快乐！ </h3>
+					<img src="images/paper2.jpeg" />
+					<p>
+						时间好快呀，和丹宝在一起都一年了，上半年，每周最欢喜的事就是坐着367去找你，和你一起去吃好吃的，一起散步，陪你一起学习，然后每次要走的时候都好不舍呀，每次都希望下周的周末快快来。下半年，疫情让我们都宅在家里了，每天都想着快快开学，见我的真猪，不过还好每天可以打那么久的视频看看假猪，晚上还可以语音陪着你一起入睡，现在还是呢。还有最开心的事就是去了你家，见了叔叔和嬢嬢，还给你们做了吃的，感受到了他们对你的爱，你真是只幸福的猪猪呢。很意外的是他们同意我接你去我家耍，当时真的是又怕又激动，可惜就是时间太短了，都没带你怎么耍，放寒假了带你好好的逛逛，给你做好多好多吃的。我们都去了对方家里，不管在哪里，每当和你在一起的时候都想粘着你腻着你，和你在一起就觉得很安逸很幸福，仿佛看到了以后在一起的样子，好想快点毕业，这样就可以天天都和你在一起啦。同时我们也马上研二了，没有了课程压力，转而是论文压力了，猪猪还有cpa压力，不过我相信我们可以的，毕竟我们都这么优秀（突然脸皮厚起来了），猪猪都这么优秀了我不能拉跨，我们要为我们的幸福生活拼搏。亲爱的丹宝，
+一周年快乐哟，我还有好多个周年快乐等着说给你听呢！手动玫瑰花--<-<-<@
+					</p>
+
 				</div>
 			</div>
 		</section>
@@ -221,20 +312,38 @@
         // };
         // autoPlayVideo();
 
-        //--创建页面监听，等待微信端页面加载完毕 触发音频播放
-		document.addEventListener('WeixinJSBridgeReady', function() {
-    		document.getElementById('audio').play()
-		})
-		function audioAutoPlay2() {
-			var audio = document.getElementById('audio');
-				audio.play();
+        // //--创建页面监听，等待微信端页面加载完毕 触发音频播放
+		// document.addEventListener('WeixinJSBridgeReady', function() {
+    	// 	document.getElementById('audio').play()
+		// })
+		// function audioAutoPlay2() {
+		// 	var audio = document.getElementById('audio');
+		// 		audio.play();
+		// }
+		//
+		// //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+		// document.addEventListener('touchstart', function () {
+		// 	audioAutoPlay2();
+		// });
+		window.onload = function(){
+			var arr = ["./music/爱，很简单-陶喆.mp3","./music/1987023712.mp3"];               //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐
+			var myAudio = new Audio();
+			myAudio.preload = true;
+			myAudio.controls = true;
+			myAudio.src = arr.pop();         //每次读数组最后一个元素
+			myAudio.addEventListener('ended', playEndedHandler, false);
+			myAudio.play();
+			document.getElementById("audioBox").appendChild(myAudio);
+			myAudio.loop = false;//禁止循环，否则无法触发ended事件
+			function playEndedHandler(){
+			myAudio.src = arr.pop();
+			myAudio.play();
+			console.log(arr.length);
+			!arr.length && myAudio.removeEventListener('ended',playEndedHandler,false);//只有一个元素时解除绑定
+			}
 		}
 
-		//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-		document.addEventListener('touchstart', function () {
-			audioAutoPlay2();
-		});
-		window.onload = audioAutoPlay2;
+
     </script>
     <script>
 	var biryear = 2019;
